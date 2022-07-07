@@ -6,14 +6,16 @@ pkgdesc='Fantasy console'
 arch=('x86_64')
 url='https://www.lexaloffle.com/pico-8.php'
 license=('custom:pico8')
-depends=('wget')
+depends=('wget'
+		'sdl2')
 source=("pico-8_${pkgver}_amd64.zip"
 		'pico8.desktop')
 sha256sums=('00967d08289d08f0fe275b21f9453734fb6c3d7f674191fa6026a0301e837d43'
             '8f2c26a9c2c4997fc10e08eca9265534f1587dc018c0be40706403a91f645bae')
 
 prepare() {
-	mv -t ${srcdir} pico-8/pico8 pico-8/pico8.dat pico-8/pico-8_manual.txt
+	mv -t ${srcdir} pico-8/pico8.dat pico-8/pico-8_manual.txt
+	mv pico-8/pico8_dyn pico8
 	mv pico-8/lexaloffle-pico8.png pico8.png
 	mv pico-8/license.txt LICENSE
 	mv pico-8/readme_linux.txt ${pkgname}.1

@@ -6,6 +6,7 @@ pkgbase = pico8
 	arch = x86_64
 	license = custom:pico8
 	depends = wget
+	depends = sdl2
 	source = pico-8_0.2.4c_amd64.zip
 	source = pico8.desktop
 	sha256sums = 00967d08289d08f0fe275b21f9453734fb6c3d7f674191fa6026a0301e837d43
