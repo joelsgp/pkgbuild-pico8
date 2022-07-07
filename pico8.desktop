@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=PICO-8
+GenericName=Fantasy Console
+Categories=Development;Game;
+Path=/opt/pico8
+Exec=pico8
+Icon=pico8
+Terminal=false
+StartupNotify=true
