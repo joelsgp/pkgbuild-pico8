@@ -2,12 +2,12 @@
 
 This is an Arch Linux makepkg build file for the PICO-8 fantasy console.
 
-It's not on the aur because you have to buy the softare. This is just an install helper. Use it like so:
+It's not on the aur because you have to buy the software. This is just an install helper. Use it like so:
 
 ```bash
 git clone https://github.com/joelsgp/pkgbuild-pico8
 cd pkgbuild-pico8
-# Download PICO-8 from where you bought it
+# Download PICO-8 from whereever you bought it
 mv ~/Downloads/pico-8_0.2.4c_amd64.zip .
 makepkg -si
 ```
